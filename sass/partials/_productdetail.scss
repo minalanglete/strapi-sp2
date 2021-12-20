@@ -1,0 +1,61 @@
+.container-product {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  padding-bottom: 40px;
+  @media (max-width: 650px) {
+    max-width: 375px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  img {
+    max-width: 600px;
+    @media (max-width: 650px) {
+      max-width: 300px;
+    }
+  }
+  .price-product {
+    font-size: 30px;
+  }
+  p {
+    text-align: left;
+  }
+  button {
+    background-color: getColour(black);
+    color: getColour(white);
+    border: none;
+    padding: 10px 40px 10px 40px;
+    font-size: 20px;
+  }
+  .add-button {
+    text-align: left;
+  }
+  h1 {
+    margin-bottom: 0px;
+  }
+  hr {
+    margin-top: 0px;
+    border-top: 1px solid getColour(black);
+  }
+  h2 {
+    text-align: left;
+    color: getColour(grey);
+    margin-bottom: 5px;
+  }
+}
+.breadcrumb {
+  text-align: left;
+  padding-bottom: 10px;
+
+  a {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    text-decoration: none;
+    color: getColour(black);
+  }
+}
+.breadcrumb:visited {
+  color: getColour(black);
+}

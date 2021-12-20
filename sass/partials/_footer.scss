@@ -1,0 +1,15 @@
+footer {
+  background-color: getColour(black);
+  color: getColour(white);
+  text-align: center;
+  padding: 10px;
+  flex-shrink: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  flex-shrink: 0;
+  .logoicon {
+    width: 90px;
+  }
+  .copyright {
+    padding-bottom: 10px;
+  }
+}

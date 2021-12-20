@@ -1,0 +1,77 @@
+.products {
+  max-width: 700px;
+  margin: auto;
+  padding-bottom: 40px;
+  @media (max-width: 740px) {
+    max-width: 370px;
+  }
+
+  .header-items {
+    text-align: center;
+    padding-bottom: 30px;
+
+    .container-search {
+      text-align: right;
+      @media (max-width: 740px) {
+        text-align: center;
+      }
+
+      ::placeholder {
+        color: getColour(black);
+        font-family: "Helvetica", FontAwesome, sans-serif;
+        padding-left: 5px;
+      }
+      .search {
+        border: none;
+        border-bottom: 1px solid getColour(black);
+        color: getColour(black);
+        padding: 5px;
+      }
+      input:focus {
+        outline: none;
+        border: 1px solid getColour(primary);
+        box-shadow: 1px 1px 5px getColour(primary);
+      }
+    }
+  }
+  .container-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width: 740px) {
+      justify-content: center;
+    }
+  }
+  .shoe-image {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+  }
+  .productimage-products {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .shoes {
+    margin-bottom: 10px;
+  }
+  .shoes:hover {
+    opacity: 0.5;
+  }
+  h2 {
+    color: getColour(black);
+    margin: 0px;
+    font-size: 18px;
+    padding-top: 2px;
+    padding-left: 5px;
+  }
+  h2:hover {
+    color: getColour(grey);
+  }
+  p {
+    font-size: 20px;
+    margin-top: 2px;
+    padding-left: 5px;
+    font-family: "Karma", serif;
+  }
+}

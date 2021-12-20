@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="edit/update page for Flaming Sneakers" />
+    <title>Edit page</title>
+    <script
+      src="https://kit.fontawesome.com/5d90823717.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Karma:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <div class="mainnav">
+        <div class="conatiner-menu"></div>
+        <a href="javascript:void(0);" class="hamburgermenu">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+
+      <div class="container-logo">
+        <img
+          class="logo big"
+          src="images/flaming_sneakers_logo.png"
+          alt="Flaming Sneakers logo"
+        />
+        <img
+          class="logo smal"
+          src="images/flaming_sneakers_smal_logo.png"
+          alt="Flaming Sneakers logo"
+        />
+      </div>
+      <ul class="nav2">
+        <li class="home">
+          <a href="index.html"><div>home</div></a>
+        </li>
+        <li>
+          <a href="products.html"><div>Products</div></a>
+        </li>
+      </ul>
+      <div class="edit-products">
+        <h1>Edit page</h1>
+
+        <form class="edit-form">
+          <div class="container-message"></div>
+          <div class="edit">
+            <label for="title">Title</label>
+            <input id="title" />
+          </div>
+          <div class="edit">
+            <label for="price">Price</label>
+            <input id="price" />
+          </div>
+          <div class="edit">
+            <label for="description">Description</label>
+            <input id="description" />
+          </div>
+          <div class="edit">
+            <label for="image">Image url</label>
+            <input id="image" />
+          </div>
+
+          <div class="checkbox">
+            <label for="featured"
+              >Featured
+              <input type="checkbox" id="featured" value="featured" />
+            </label>
+          </div>
+
+          <input id="id" type="hidden" />
+
+          <button id="update" class="buttonupdate">Update product</button>
+
+          <div class="delete-container"></div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <img
+        src="/images/flaming_sneakers_icon.png"
+        alt="logoicon"
+        class="logoicon"
+      />
+      <div>Flaming Sneakers</div>
+      <div class="copyright">Copyright 2020 Mina Langlete</div>
+    </footer>
+    <script src="js/editproduct.js" type="module"></script>
+  </body>
+</html>

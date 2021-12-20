@@ -1,0 +1,23 @@
+.logo {
+  width: 50%;
+  max-width: 700px;
+  display: block;
+  margin: auto;
+}
+.smal {
+  display: none;
+
+  @media (max-width: 550px) {
+    display: block;
+    padding-left: 30px;
+    width: 60%;
+  }
+}
+.big {
+  @media (max-width: 550px) {
+    display: none;
+  }
+}
+.container-logo {
+  background-color: getColour(black);
+}

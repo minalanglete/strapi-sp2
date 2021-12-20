@@ -1,0 +1,61 @@
+.edit-products {
+  width: 700px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 50px;
+  @media (max-width: 700px) {
+    width: 300px;
+    margin: auto;
+  }
+  .edit {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 0px 0px;
+    margin: auto;
+    @media (max-width: 700px) {
+      max-width: 250px;
+    }
+    input {
+      width: 300px;
+      padding: 7px;
+      border: none;
+      border-radius: 3px;
+      @media (max-width: 700px) {
+        width: 150px;
+      }
+    }
+    input:focus {
+      outline: none;
+      border: 1px solid getColour(primary);
+      box-shadow: 1px 1px 5px getColour(primary);
+    }
+  }
+  .edit-form {
+    display: none;
+
+    @media (max-width: 700px) {
+      width: 300px;
+      margin: auto;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  button {
+    width: 400px;
+    @media (max-width: 700px) {
+      max-width: 200px;
+    }
+  }
+
+  .checkbox {
+    padding-left: 24px;
+    @media (max-width: 700px) {
+      input {
+        margin: 0px;
+        width: 55px;
+      }
+      padding-left: 25px;
+    }
+  }
+}

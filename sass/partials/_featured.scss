@@ -1,0 +1,37 @@
+.featured-item {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+.container-featured {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .shoes {
+    padding: 20px;
+
+    h2 {
+      color: getColour(grey);
+      margin-bottom: 0px;
+    }
+    h2:hover {
+      color: getColour(black);
+    }
+
+    p {
+      font-weight: bold;
+      margin-top: 0px;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  .shoes:hover {
+    opacity: 0.5;
+  }
+}

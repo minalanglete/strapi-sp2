@@ -1,0 +1,18 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+.active {
+  color: getColour(primary);
+}
+a:hover {
+  color: getColour(primary);
+}

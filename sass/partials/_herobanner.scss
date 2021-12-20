@@ -1,0 +1,43 @@
+.container-herobanner {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+.herobanner {
+  width: 2000px;
+  margin: -460px 0px 0px 0px;
+  filter: grayscale(100%);
+}
+.shopnow-button {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  button {
+    background-color: getColour(white);
+    border: none;
+    border-radius: 0px;
+    padding: 10px 30px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    @media (max-width: 550px) {
+      width: 300px;
+    }
+
+    a {
+      color: getColour(black);
+    }
+
+    a:hover {
+      color: getColour(black);
+    }
+  }
+  button:hover {
+    background-color: getColour(primary);
+  }
+}
